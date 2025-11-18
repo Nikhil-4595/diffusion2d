@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nikhilnl_diffusion2d"
+version = "0.0.4"
+description = "2D diffusion simulation packaged as a Python module."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Nikhil Nikhil", email = "st195046@stud.uni-stuttgart.de" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "numpy",
+  "matplotlib",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Nikhil-4595/diffusion2d" 
+"Source" = "https://github.com/Nikhil-4595/diffusion2d"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nikhilnl_diffusion2d"]
